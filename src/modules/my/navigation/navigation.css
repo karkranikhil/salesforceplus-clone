@@ -1,0 +1,31 @@
+.navigation-wrapper {
+  width: 100%;
+  background: #001639;
+  height:80px;
+  
+}
+.navigation-container{
+  display: flex;
+  align-items: center;
+  height: inherit;
+  margin-left: 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+.logo{
+  margin-right: 64px;
+  margin-left: 12px;
+}
+.app-link {
+  display: flex;
+  margin-right: 2px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 42px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.app-link.selected {
+background: rgba(255, 255, 255, 0.12);
+}

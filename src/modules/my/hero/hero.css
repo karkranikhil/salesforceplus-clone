@@ -1,0 +1,137 @@
+.hero--container {
+  background-color: #001639;
+  height: auto;
+  min-height: 480px;
+  position: relative;
+}
+
+.hero {
+  height: 90vh;
+  align-items: center;
+  transform: scale(1) translate3d(0, 0, 0);
+  position: relative;
+  display: flex;
+  width: 100%;
+  
+}
+
+.video {
+  width: 100%;
+  object-fit: cover;
+  height: 90vh;
+  position: relative;
+}
+.shade{
+  width: 90vh;
+  left: 100%;
+  height: 100vw;
+  background: linear-gradient(180deg, rgba(0, 22, 57, 0) 0%, #001639 100% );
+  transform-origin: top left;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.shade-bottom{
+    position: absolute;
+    right: 0;
+    bottom: -0.5%;
+    height: 10vh;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(0, 22, 57, 0) 0%, #001639 100%);
+}
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 100px);
+}
+.hero--content {
+  position: absolute;
+  top: 0;
+  bottom: 10vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+  justify-content: center;
+}
+.hero--content {
+  color: #fff;
+  z-index: 1;
+}
+.hero--logo{
+  background: url("https://wp.salesforce.com/bxp/wp-content/uploads/sites/6/2021/08/dreamforce-logo.png") 0% 0% / contain no-repeat;
+  height: 58px;
+  margin-bottom: 16px
+}
+.grid__col-sm-12 {
+  flex-basis: calc((12 / 12) * (100vw - 100px));
+}
+
+.hero-log{
+  background: url(https://wp.salesforce.com/bxp/wp-content/uploads/sites/6/2021/08/dreamforce-logo.png) 0% 0% / contain no-repeat;
+}
+.hero--title{
+  font-family: 'ITC Avant Garde', sans-serif;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: -0.85px;
+  text-rendering: geometricPrecision;
+  margin-bottom: 4px;
+  
+}
+.hero--description{
+    font-family: 'Salesforce Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-rendering: geometricPrecision;
+    margin-bottom: 1rem;
+}
+.hero--actions {
+  display: flex;
+  justify-content: initial;
+}
+.primary-color{
+  background-color: #0176d3;
+}
+.text-button {
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 17px 24px;
+  transition: background-color 400ms cubic-bezier(0.3, 0, 0.15, 1);
+  display: flex;
+  justify-content: center;
+  margin-right: 12px;
+}
+.text-button.tertiary {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #fff;
+}
+.text-button .button-icon {
+  height: 12px;
+  display: block;
+  margin-right: 6px;
+}
+
+@media screen and (min-width: 640px){
+  .grid__col-md-5 {
+    flex-basis: calc((5 / 12) * (100vw - -100px));
+    margin-right: 8px;
+  }
+  .hero--title{
+    font-size: 40px;
+    line-height: 46px;
+    
+  }
+}
+svg{
+  transform:rotate(90deg)
+}
