@@ -1,4 +1,4 @@
-# saalesforceplus
+# salesforceplus clone for fun
 
 Here will be some information about the app.
 
